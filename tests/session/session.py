@@ -5,7 +5,7 @@ class Session:
     _instance = None
 
     def __init__(self):
-        self.browser = FactoryBrowser.make().create()
+        self.browser = FactoryBrowser.create()
 
     @classmethod
     def get_instance(cls):

@@ -1,11 +1,11 @@
-from tests.browser.chrome import Chrome
+from browser.chrome import create
 
 
 class FactoryBrowser:
     @staticmethod
     def make(browser_type):
         if browser_type.lower() == "chrome":
-            return Chrome().create()
+            return create()
         # Add other cases for different browsers
         else:
-            return Chrome().create()  # Default to Chrome
+            return create()  # Default to Chrome
