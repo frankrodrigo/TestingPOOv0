@@ -9,8 +9,8 @@ from tests.session.session import Session
 
 class CRUDProjectTest(unittest.TestCase):
     def test_verify_crud_project(self):
-        project_created = "MOJIX" + str(datetime.now().timestamp())
-        project_updated = "QA" + str(datetime.now().timestamp())
+        project_created = "Lambton" + str(datetime.now().timestamp())
+        project_updated = "PythonUpdate" + str(datetime.now().timestamp())
 
         MainPage().login_label.click()
         LoginSection().email_txt_box.set_text("username")

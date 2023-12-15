@@ -28,8 +28,8 @@ def test_verify_CRUD_project(driver_setup):
 
     # Login
     driver.find_element(By.XPATH, "//img[contains(@src,'pagelogin')]").click()
-    driver.find_element(By.ID, "ctl00_MainContent_LoginControl1_TextBoxEmail").send_keys("bootcamp@mojix44.com")
-    driver.find_element(By.ID, "ctl00_MainContent_LoginControl1_TextBoxPassword").send_keys("12345")
+    driver.find_element(By.ID, "ctl00_MainContent_LoginControl1_TextBoxEmail").send_keys("frank@frank.com")
+    driver.find_element(By.ID, "ctl00_MainContent_LoginControl1_TextBoxPassword").send_keys("123456")
     driver.find_element(By.ID, "ctl00_MainContent_LoginControl1_ButtonLogin").click()
 
     # Explicit Wait

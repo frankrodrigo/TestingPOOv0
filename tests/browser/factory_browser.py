@@ -6,6 +6,7 @@ class FactoryBrowser:
     def make(browser_type):
         if browser_type.lower() == "chrome":
             return create()
-        # Add other cases for different browsers
+# It is needed to have the other drivers for the other browsers, for example, Geckodriver for Firefox
+
         else:
             return create()  # Default to Chrome
